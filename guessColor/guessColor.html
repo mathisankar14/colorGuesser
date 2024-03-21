@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+
+        #div1 {
+            height: 45vh;
+            background-color: blue;
+        }
+
+        #div2 {
+            height: 50vh;
+            background-color: orange;
+        }
+
+        #div2 h1,
+        #div1 h1 {
+            color: #fff;
+            position: relative;
+            text-align: center;
+            align-items: center;
+            top: 40%;
+        }
+
+        ul {
+            border-radius: 10px;
+            border: 1px solid #fff;
+            box-shadow: 0px 10px 100px black;
+            background-color: rgb(160, 32, 240);
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            z-index: 100;
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        ul li a {
+            color: rgb(93, 225, 36);
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h1></h1>
+    </div>
+    <ul>
+        <li id="red"><a href="" onclick="colorChange('Red')">Red</a></li>
+        <li><a href="" onclick="colorChange('Green')">Green</a></li>
+        <li><a href="" onclick="colorChange('Blue')">Blue</a></li>
+        <li><a href="" onclick="colorChange('Yellow')">Yellow</a></li>
+        <li><a href="" onclick="colorChange('Pink')">Pink</a></li>
+        <li><a href="" onclick="colorChange('Black')">Black</a></li>
+        <li><a href="" onclick="colorChange('Brown')">Brown </a></li>
+        <li><a href="" onclick="colorChange('Grey')">Grey</a></li>
+        <li><a href="" onclick="colorChange('Orange')">orange</a></li>
+        <li><a href="" onclick="colorChange('Purple')">purple</a></li>
+
+    </ul>
+    <div id="div2">
+        <h1 id="div1H1"></h1>
+    </div>
+</body>
+<script src="guessColor.js"></script>
+
+</html>
